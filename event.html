@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+var n1 = parseInt(prompt("Enter first number"));
+var n2 = parseInt(prompt("Enter second number"));
+function add() {
+alert("Sum is " +(n1+n2));
+}
+function sub() {
+alert("Difference is " +(n1-n2));
+}
+function mul() {
+alert("Product is " +(n1*n2));
+}
+function div() {
+alert("Quotient is " +(n1/n2));
+}
+function bigB(x){
+x.style.height = "105px";
+x.style.width = "105px";
+}
+function normalB(x){
+x.style.height = "65px";
+x.style.width = "65px";
+}
+</script>
+</head>
+<body>
+
+<button type="button" onclick="add()" onmouseenter="bigB(this)" onmouseleave="normalB(this)">Add</button>
+
+<button type="button" onclick="sub()" onmouseenter="bigB(this)" onmouseleave="normalB(this)">Subtract</button>
+
+<button type="button" onclick="mul()" onmouseenter="bigB(this)" onmouseleave="normalB(this)">Product</button>
+
+<button type="button" onclick="div()"onmouseenter="bigB(this)" onmouseleave="normalB(this)">Quotient</button>
+</body>
+</html>

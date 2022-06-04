@@ -1,0 +1,14 @@
+<html>
+<body>
+<div id="parent">
+<button> Enter Name</button>
+<button id="child"> Click me </button> 
+</div><br>
+<script>
+document.getElementById(
+"child").addEventListener("click", function () { alert("You clicked me"); });
+document.getElementById("parent").addEventListener("click", function () { var n = prompt("Enter Your name");
+alert("Welcome " +n); });
+</script>
+</body>
+</html>

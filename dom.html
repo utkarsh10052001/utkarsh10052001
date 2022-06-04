@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1> Hello </h1>
+<p id="myP">   Welcome to this page <span> click the buttons to change texts </span>.</p>
+<button onclick="ChangeOuterText()">Change Text using OuterText</button>
+<button onclick="ChangeInnerText()"> Change Text using InnerText </button>
+<pre id="Texts"></pre>
+
+<script>
+function ChangeInnerText() {
+  let text = document.getElementById("myP").innerText;
+  document.getElementById("Texts").innerText = text;
+}
+function ChangeOuterText() {
+var x = document.getElementsByTagName("h1")[0];
+x.outerHTML = "Hey There ";
+}
+</script>
+</body>
+</html>

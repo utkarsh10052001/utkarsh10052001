@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+var n = prompt("Enter your Name");
+let timeout;
+function t() {
+timeout = setTimeout(alertFunc, 1000);
+}
+
+function alertFunc() {
+alert("Hello! "+n);
+}
+</script>
+<body>
+<button onclick="t()"> CLICK ME </button>
+
+</body>	
+</html>

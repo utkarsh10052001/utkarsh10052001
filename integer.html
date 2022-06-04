@@ -1,0 +1,43 @@
+<html>
+<head>
+<script>
+var n1 = parseInt(prompt("Enter the first number"));
+var n2 = parseInt(prompt("Enter the second number"));
+var n3 = parseInt(prompt("Enter the third number"));
+var l ,s;
+
+if(n1>n2 && n1>n3)
+{
+l = n1;
+}
+else if(n2>n1 && n2>n3)
+{
+l = n2;
+}
+else if(n3>n1 && n3>n2)
+{
+l = n3;
+}
+
+if(n1<n2 && n1<n3)
+{
+s = n1;
+}
+else if(n2<n1 && n2<n3)
+{
+s = n2;
+}
+else if(n3<n1 && n3<n2)
+{
+s = n3;
+}
+
+window.alert("Sum of " +n1+ ", " +n2+ " and " +n3+ " are " +(n1+n2+n3) +
+"\n" + "Average of " +n1+ ", " +n2+ " and " +n3+ " are " +((n1+n2+n3)/3) +
+"\n" + "Product of " +n1+ ", " +n2+ " and " +n3+ " are " +(n1*n2*n3) +
+"\n" + "Largest of " +n1+ ", " +n2+ " and " +n3+ " is " +l +
+"\n" + "Smallest of " +n1+ ", " +n2+ " and " +n3+ " is " +s);
+</script>
+<body>
+</body>
+</html>

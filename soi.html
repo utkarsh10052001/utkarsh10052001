@@ -1,0 +1,31 @@
+<html>
+<head>
+<script>
+function change(x) {
+switch (x) {
+case 1: 
+document.getElementById("list").style.color = "green";
+break;
+case 2: 
+document.getElementById("list").style = "font-family:verdana";
+break;
+case 3:
+document.getElementById("list").style.listStyleType="lower-alpha";
+break;
+default:break;
+}
+</script>
+<body>
+<h2>List of flowers</h2>
+<ol type="1" id = "list">
+<li>Rose</li>
+<li>Sunflower</li>
+<li>Mariegold</li>
+<li>Lily</li>
+<li>Lotus</li>
+</ol>
+<button onclick="change(1)">Color</button>
+<button onclick="change(2)">FONT</button>
+<button onclick="change(3)">LIST TYPE</button>
+</body>
+</html>

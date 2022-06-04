@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Change Image on Hover in CSS</title>
+<style>
+    .card {
+        width: 130px;
+        height: 195px;
+        position: relative;
+        display: inline-block;
+        margin: 50px;
+    }
+    .card .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .card:hover .img-top {
+        display: inline;
+    }
+</style>
+</head>
+<body>
+    <div class="card">
+    	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvZ1rTB7idWaB-FMLSiwubXLizTaEE2GJSUg&usqp=CAU" alt="Card Back">
+        <img src="data:image/png;base64,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" class="img-top" alt="Card Front">
+    </div>
+</body>
+</html>
